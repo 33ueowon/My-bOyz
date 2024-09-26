@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Cafe24Meongi-W-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('path/to/grass-image.jpg');
+    background-size: cover;
+}
+#enhypen-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.wallpaper {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Cafe24Meongi-W-v1.0', serif;
+    font-size: 100px;
+    color: #f0f0f0;
+    background-color: #B19494;  
+    
+    width: 800px;
+    height: 97px;
+    border-radius: 50%;
+     
+    /* background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}

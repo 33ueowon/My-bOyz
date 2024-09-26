@@ -27,6 +27,12 @@ body {
     left: 50%;
     transform: translateX(-50%); /* 가운데 정렬 */
 }
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
 
 .nav-icon ul {
     display: flex; /* 가로로 배치 */
@@ -47,18 +53,21 @@ body {
     color: rgb(0, 0, 0); /* 텍스트 색상 */
     border-radius: 50px; /* 모서리 둥글게 */
 }
-
-.enhypen {
-    background-color: #A0B4BD;
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+button{
+    margin: 0 100px;
+    padding:  30px 40px;
+    border-radius: 50%;
+    font-family: 'Cafe24Meongi-W-v1.0';
+    font-size: 40px;
+    
 }
 
-.JungHaein {
-    background-color: #95AC8A;
-}
-
-.nct-wish {
-    background-color: #B19494;
-}
 .nav-img{
     display: grid;
     grid-template-columns: repeat(3,auto);
@@ -72,52 +81,65 @@ body {
     z-index: -1;
 }
 .main-img img{
-    width: 30%;
-    max-width: 30%;
+    
+    /* max-width: 30%s; */
     height: 400px;
     max-height: 300px;
-    border-radius: 190px;
-}
-
+    border-radius: 190px;     
+}   
 .main-img{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     gap: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
 }
 
 main.main-img {
     margin-top: 400px;
 }
-a{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
-}
+
 .img-logo {
+    position: relative;
     display: flex;
-    justify-content: space-around; /* 이미지를 수평으로 정렬 */
-    align-items: center; /* 이미지가 세로로 중앙에 위치 */
-    padding: 20px; 
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 258px;
+    border-radius: 0%;
 }
 
-.enhypen-logo {
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* 기본적으로 숨김 */
+    height: auto;
+}
+
+#enhypen-logo{
     width: 268px;
     height: 38px;
+    border-radius: 0;
 }
-
-.nctwish-logo {
+#nctwish-logo{
     width: 186px;
     height: 121px;
+    border-radius: 0;
 }
-
-.haein-logo {
+#haein-logo{
     width: 335px;
     height: 60px;
+    border-radius: 0;
 }
-
-
-
-
